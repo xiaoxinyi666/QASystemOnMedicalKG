@@ -2,9 +2,10 @@ import werobot
 import os
 from tuling import visit_tuling
 from baidu import visit_baidu
-from chatbot_graph import handler
+from chatbot_graph import ChatBotGraph
 token = os.getenv("token", "XTiw5QAnhO3NOPiYS5AUyQvxOdKI")
 robot = werobot.WeRoBot(token=token)
+handler = ChatBotGraph()
 
 # @robot.text
 # def home(message,session):
